@@ -1,0 +1,21 @@
+.bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.block {
+  position: absolute;
+  animation: drift ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty)) rotate(var(--rotate));
+  }
+}

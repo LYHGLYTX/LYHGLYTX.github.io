@@ -1,0 +1,86 @@
+.container {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.metaLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  min-width: 5rem;
+}
+
+.chipBadge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  order: 0;
+}
+
+.badge每日最佳员工 {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #7c4a00;
+}
+
+.badge勤奋贡献者 {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-700);
+}
+
+.badge积极贡献者 {
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-500);
+}
+
+.chipLink {
+  display: flex;
+  order: 1;
+}
+
+.chipAvatar {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--ifm-color-emphasis-200);
+  transition: border-color 0.2s;
+}
+
+.chipAvatar:hover {
+  border-color: var(--ifm-link-color);
+}
+
+.chipName {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+  text-decoration: none;
+  white-space: nowrap;
+  order: 2;
+}
+
+.chipName:hover {
+  text-decoration: none;
+  color: var(--ifm-link-color);
+}

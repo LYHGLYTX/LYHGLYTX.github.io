@@ -1,0 +1,212 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #3b6cb4;
+  --ifm-color-primary-dark: #3561a2;
+  --ifm-color-primary-darker: #325c99;
+  --ifm-color-primary-darkest: #294c7e;
+  --ifm-color-primary-light: #477bc0;
+  --ifm-color-primary-lighter: #5083c4;
+  --ifm-color-primary-lightest: #6b98d0;
+  --ifm-background-color: #dce4f0;
+  --ifm-background-surface-color: #e3eaf4;
+  --ifm-font-color-base: #2a3a4e;
+  --ifm-navbar-background-color: #1a1a2e;
+  --ifm-navbar-link-color: #c8ddf5;
+  --ifm-navbar-link-hover-color: #ffffff;
+  --ifm-footer-background-color: #1a1a2e;
+  --ifm-footer-link-color: #c8ddf5;
+  --ifm-footer-link-hover-color: #ffffff;
+  --ifm-footer-title-color: #ffffff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+.contributors-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.contributor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.contributor-badge:hover {
+  text-decoration: none;
+  color: var(--ifm-link-color);
+}
+
+.contributor-badge img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.blog-list-page article h2 {
+  font-size: 2rem;
+}
+
+article table th:first-child,
+article table td:first-child { width: 70px; white-space: nowrap; }
+article table th:nth-child(3),
+article table td:nth-child(3) { width: 110px; white-space: nowrap; }
+article table th:nth-child(4),
+article table td:nth-child(4) { width: 105px; white-space: nowrap; }
+
+.hero--primary {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.navbar {
+  background: #1a1a2e !important;
+}
+
+.footer--dark {
+  background: #1a1a2e !important;
+}
+
+[data-theme='dark'] .navbar,
+[data-theme='dark'] .footer--dark {
+  background: #0d1117 !important;
+}
+
+.hero__title {
+  color: #c0d0e0 !important;
+}
+
+.hero__subtitle {
+  color: #8aa0b8;
+}
+
+body {
+  background: #dce4f0;
+}
+
+[data-theme='dark'] body {
+  background: #0d1117;
+}
+
+html {
+  background: #dce4f0;
+}
+
+[data-theme='dark'] html {
+  background: #0d1117;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #5b9bd5;
+  --ifm-color-primary-dark: #4a8cc7;
+  --ifm-color-primary-darker: #4285bf;
+  --ifm-color-primary-darkest: #3770a3;
+  --ifm-color-primary-light: #6ca7db;
+  --ifm-color-primary-lighter: #76aedf;
+  --ifm-color-primary-lightest: #92bfe6;
+  --ifm-background-color: #0d1117;
+  --ifm-background-surface-color: #161b22;
+  --ifm-font-color-base: #c8ddf5;
+  --ifm-navbar-background-color: #0d1117;
+  --ifm-navbar-link-color: #c8ddf5;
+  --ifm-navbar-link-hover-color: #ffffff;
+  --ifm-footer-background-color: #0d1117;
+  --ifm-footer-link-color: #c8ddf5;
+  --ifm-footer-link-hover-color: #ffffff;
+  --ifm-footer-title-color: #ffffff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.hero .button--secondary {
+  background: rgba(192, 208, 224, 0.15);
+  color: #c0d0e0;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.hero .button--secondary:hover {
+  background: rgba(192, 208, 224, 0.25);
+  color: #ffffff;
+  border-color: rgba(255,255,255,0.3);
+}
+
+/* ===== 全站共享设计语言（与 roadmap 统一） ===== */
+:root {
+  --ccb-accent-grad: linear-gradient(135deg, #5b9bd5, #3b6cb4);
+  --ccb-hero-grad: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  --ccb-card-radius: 14px;
+  --ccb-card-shadow: 0 12px 30px rgba(15, 52, 96, 0.13);
+}
+
+/* 平滑滚动 + 锚点偏移，避免标题被固定导航遮挡 */
+html { scroll-behavior: smooth; }
+:target { scroll-margin-top: 5rem; }
+
+/* 链接过渡更顺滑 */
+a { transition: color 0.15s ease; }
+
+/* 全站卡片悬浮统一手感 */
+.card {
+  border-radius: var(--ccb-card-radius);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ccb-card-shadow);
+}
+
+/* 主按钮微交互 */
+.button--primary {
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 108, 180, 0.35);
+}
+
+/* 文档区告示块（admonition）圆角与左条更精致 */
+.theme-admonition {
+  border-radius: 12px;
+  border-left-width: 4px;
+}
+
+/* 文档表格：圆角包裹 + 表头着色 + 斑马纹 */
+.markdown table {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 var(--ifm-color-emphasis-200);
+}
+.markdown table thead tr {
+  background: var(--ifm-color-emphasis-100);
+}
+.markdown table tbody tr:nth-child(2n) {
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* 自定义滚动条（桌面） */
+@media (pointer: fine) {
+  * { scrollbar-width: thin; scrollbar-color: var(--ifm-color-primary) transparent; }
+  *::-webkit-scrollbar { width: 10px; height: 10px; }
+  *::-webkit-scrollbar-thumb {
+    background: var(--ifm-color-primary);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  *::-webkit-scrollbar-track { background: transparent; }
+}
+
+/* 尊重无障碍：减少动效偏好 */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card, .button--primary { transition: none; }
+}

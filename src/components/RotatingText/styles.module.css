@@ -1,0 +1,15 @@
+.rotating {
+  display: inline-block;
+  min-height: 1.5em;
+}
+
+.cursor {
+  animation: blink 0.8s infinite;
+  font-weight: 100;
+  opacity: 1;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}

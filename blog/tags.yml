@@ -1,0 +1,24 @@
+sync:
+  label: 上游同步
+  permalink: /sync
+  description: 从 CDDA 上游同步内容的进展
+
+build:
+  label: 构建
+  permalink: /build
+  description: 编译与构建相关
+
+announcement:
+  label: 公告
+  permalink: /announcement
+  description: 项目公告与重要更新
+
+activity:
+  label: 开发动态
+  permalink: /activity
+  description: 开发活动自动汇总
+
+auto:
+  label: 自动生成
+  permalink: /auto
+  description: 由 GitHub Actions 自动生成
