@@ -54,10 +54,10 @@ const QQGroups = [
     desc: '贴图美术贡献与归置',
   },
   {
-    name: '交流群 2',
+    name: '翻译贡献群',
     number: '316558115',
     img: 'img/qq/qrcode.jpg',
-    desc: '玩家日常交流、提问、反馈',
+    desc: '游戏翻译与本地化贡献',
   },
 ];
 
