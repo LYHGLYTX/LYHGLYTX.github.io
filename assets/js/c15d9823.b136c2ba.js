@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkccb_site=self.webpackChunkccb_site||[]).push([["6431"],{9328(e){e.exports=JSON.parse('{"metadata":{"permalink":"/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"CCB \u5F00\u53D1\u8FDB\u5C55\u4E0E\u4E0A\u6E38\u540C\u6B65\u65E5\u5FD7","blogTitle":"\u5DE5\u4F5C\u72B6\u6001"}}')}}]);
