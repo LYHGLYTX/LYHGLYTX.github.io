@@ -53,6 +53,12 @@ const QQGroups = [
     img: 'img/qq/tileset.jpg',
     desc: '贴图美术贡献与归置',
   },
+  {
+    name: '交流群 2',
+    number: '316558115',
+    img: 'img/qq/qrcode.jpg',
+    desc: '玩家日常交流、提问、反馈',
+  },
 ];
 
 function QQCard({name, number, img, desc}) {
@@ -99,7 +105,7 @@ export default function Community() {
           </p>
           <div className={styles.heroStats}>
             <span className={styles.heroStat}>💬 2 个在线社区</span>
-            <span className={styles.heroStat}>🐧 3 个 QQ 群</span>
+            <span className={styles.heroStat}>🐧 4 个 QQ 群</span>
           </div>
         </div>
         <div className={styles.heroFade} />
